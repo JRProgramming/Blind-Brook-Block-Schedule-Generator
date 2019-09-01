@@ -12,6 +12,20 @@ table {
     position: relative;
     width: 100%;
 }
+button {
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid grey;
+    height: 30px;
+    width: 60px;
+}
+button:hover {
+    background-color: white;
+    cursor:pointer;
+}
+textarea {
+    border-radius: 5px;
+}
 .first {
     background-color: tomato;
 }
