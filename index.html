@@ -24,6 +24,14 @@
         <footer>
             <i style="position: fixed; bottom: 0; right: 0; padding: 3px;">Made by Johnny Ramirez</i>
         </footer>
+        <script>
+            window.onload = function() {
+                if(navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("MSIE") != -1)
+                {
+                    document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari and Chrome are preferable)</h3>"
+                }
+            }
+        </script>
     </body>
 </html>
 <style>
