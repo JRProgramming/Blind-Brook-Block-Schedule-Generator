@@ -104,6 +104,10 @@
 <script>
     window.onload = function() {
         document.getElementsByTagName("table")[0].style.visibility = "hidden"
+        if(navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("MSIE") != -1)
+        {
+            document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari and Chrome are preferable)</h3>"
+        }
     }
 
     function implementClass() {
