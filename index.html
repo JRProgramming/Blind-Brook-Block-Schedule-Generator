@@ -26,8 +26,7 @@
         </footer>
         <script>
             window.onload = function() {
-                if(navigator.userAgent.indexOf("MSIE") != -1 || navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("Trident") != -1 || navigator.userAgent.indexOf("Opera") != -1 || navigator.userAgent.indexOf('OPR')) != -1)
-                {
+                if(navigator.userAgent.indexOf("MSIE") != -1 || navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("Trident") != -1 || navigator.userAgent.indexOf("Opera") != -1 || navigator.userAgent.indexOf('OPR') != -1 || (!!document.documentMode == true)) {
                     document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari, Chrome, and FireFox are preferable)</h3>"
                 }
             }
