@@ -1,0 +1,41 @@
+header, h1 {
+    background-color: #003cb3;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    text-align: left;
+    font-weight: normal;
+}
+h4 {
+    color: red;
+    text-align: center
+}
+h2, h3, h4 {
+    padding: 0 100px;
+}
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+}
+i {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3px;
+    font-family: Times New Roman;
+    z-index: -1;
+}
+button {
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid grey;
+    height: 50px;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button:hover {
+    background-color: white;
+    cursor:pointer;
+}
