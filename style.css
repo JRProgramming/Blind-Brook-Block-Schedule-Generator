@@ -23,15 +23,6 @@ header, h1 {
     text-align: left;
     font-weight: normal;
 }
-body {
-    font-family: Arial;
-    margin: 0;
-}
-table {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-}
 i {
     position: fixed;
     bottom: 0;
@@ -40,12 +31,30 @@ i {
     font-family: Times New Roman;
     z-index: -1;
 }
+body {
+    font-family: Arial;
+    margin: 0;
+}
+table {
+    position: relative;
+    width: 90%;
+    margin: 100px auto;
+}
 button {
     border-radius: 5px;
     background-color: lightgray;
     border: 1px solid grey;
     height: 30px;
     width: 60px;
+}
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px 0 10px;
+}
+a:hover {
+    color: grey;
 }
 button:hover {
     background-color: white;
