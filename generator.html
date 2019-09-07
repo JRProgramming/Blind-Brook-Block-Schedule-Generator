@@ -120,10 +120,10 @@
         var classes = textfield.value.split('\n');
         for(i=0; i<classes.length; i++) {
             classes[i] = classes[i].trim()
-            for(_=0;_<6;_++) {
-                classes[i] = classes[i].replace(' ', '')
+            for(j=0;j<classes[i].length;j++) {
+                classes[i] = classes[i].replace('\t','!')
             }
-            classes[i] = classes[i].replace(/\s/g,' ').split(' ')
+            classes[i] = classes[i].split('!')
             var unnecessaryIndexInArray = [3, 4, 5]
             for(j=0;j<3;j++) {
                 classes[i].splice(unnecessaryIndexInArray[j], 1)
