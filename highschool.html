@@ -4,34 +4,35 @@
         <title>Block Schedule Generator</title>
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
-    <body>
+    <body id="homePage">
         <header>
-            <h1 class="pHeader">Paste your classes down below</h1>
+            <h1>High School Block Schedule Generator</h1>
+        </header>
+        <main>
             <textarea type="text"  class="pHeader" id="textfield" placeholder="Paste your classes" rows="15" cols="75"></textarea>
-            <br class="pHeader">
             <br class="pHeader">
             <button class="pHeader" id="button" onclick="implementClass()">Submit</button>
             <div id="errorPlacement" class="pHeader"></div>
-            <h3 class="sHeader" hidden>Here is your schedule</h3><br class="sHeader" hidden>
-            <strong class="sHeader" hidden>If you can't see the full schedule, expand the window or use a different device with a larger screen</strong><br class="sHeader" hidden>
-            <strong class="sHeader" hidden>Feel free to take a screenshot of the schedule</strong>
-        </header>
-        <br>
-        <main>
+            <h3 class="sHeader" hidden>Here is your schedule</h3>
+            <b class="sHeader" id="bold" hidden>If you can't see the full schedule, expand the window or use a different device with a larger screen</b>
+            <b class="sHeader" id="bold" hidden>Feel free to take a screenshot of the schedule</b>
+            <br>
             <table>
                 <thead>
                     <tr>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
-                        <th><span><strong></strong></span></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
+                        <th><strong></strong></th>
                     </tr>
                 </thead>
                 <tr>
+                    <th scope="row">7:50-8:43</th>
                     <td class="first" id="p1A"></td>
                     <td class="third" id="p3B"></td>
                     <td class="fifth" id="p5C"></td>
@@ -42,6 +43,7 @@
                     <td class="fifth" id="p5H"></td>
                 </tr>
                 <tr>
+                    <th scope="row">8:46-9:39</th>
                     <td class="second" id="p2A"></td>
                     <td class="fourth" id="p4B"></td>
                     <td class="sixth" id="p6C"></td>
@@ -52,6 +54,7 @@
                     <td class="sixth" id="p6H"></td>
                 </tr>
                 <tr>
+                    <th scope="row">9:42-10:35</th>
                     <td class="third" id="p3A"></td>
                     <td class="fifth" id="p5B"></td>
                     <td class="seventh" id="p7C"></td>
@@ -62,9 +65,11 @@
                     <td class="seventh" id="p7H"></td>
                 </tr>
                 <tr>
+                    <th scope="row">10:38-11:31</th>
                     <td id="lunch" colspan="8"></td>
                 </tr>
                 <tr>
+                    <th scope="row">11:34-12:27</th>
                     <td class="fourth" id="p4A"></td>
                     <td class="sixth" id="p6B"></td>
                     <td class="eigth" id="p8C"></td>
@@ -75,6 +80,7 @@
                     <td class="eigth" id="p8H"></td>
                 </tr>
                 <tr>
+                    <th scope="row">12:30-1:23</th>
                     <td class="fifth" id="p5A"></td>
                     <td class="seventh" id="p7B"></td>
                     <td class="first" id="p1C"></td>
@@ -85,6 +91,7 @@
                     <td class="first" id="p1H"></td>
                 </tr>
                 <tr>
+                    <th scope="row">1:26-2:19</th>
                     <td class="sixth" id="p6A"></td>
                     <td class="eigth" id="p8B"></td>
                     <td class="second" id="p2C"></td>
@@ -97,7 +104,7 @@
             </table>
         </main>
         <footer>
-            <i style="position: fixed; bottom: 0; right: 0; padding: 3px;">Made by Johnny Ramirez</i>
+            <i style="position: fixed; bottom: 0; right: 0; padding: 3px; font-family: Times New Roman;">Made by Johnny Ramirez</i>
         </footer>
         <script src="script.js" type="text/javascript"></script>
     </body>
