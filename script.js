@@ -1,7 +1,7 @@
 window.onload = function() {
     document.getElementsByTagName("table")[0].style.visibility = "hidden"
-    if(navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("MSIE") != -1) {
-        document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari and Chrome are preferable)</h3>"
+    if(navigator.userAgent.indexOf("MSIE") != -1 || navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("Trident") != -1 || (!!document.documentMode == true)) {
+        document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari, Chrome, FireFox, and Opera are preferable)</h3>"
     }
 }
 function implementClass() {
@@ -12,10 +12,10 @@ function implementClass() {
     var classes = textfield.value.split('\n');
     for(i=0; i<classes.length; i++) {
         classes[i] = classes[i].trim()
-        for(_=0;_<6;_++) {
-            classes[i] = classes[i].replace(' ', '')
+        for(j=0;j<classes[i].length;j++) {
+            classes[i] = classes[i].replace('\t','!@#$')
         }
-        classes[i] = classes[i].replace(/\s/g,' ').split(' ')
+        classes[i] = classes[i].split('!@#$')
         var unnecessaryIndexInArray = [3, 4, 5]
         for(j=0;j<3;j++) {
             classes[i].splice(unnecessaryIndexInArray[j], 1)
@@ -35,7 +35,7 @@ function implementClass() {
         }
     }
     document.getElementById("lunch").innerHTML = "Lunch"
-    var letterDays = ["A","B","C","D","E","F","G","H"]
+    var letterDays = ["Time","A","B","C","D","E","F","G","H"]
     for(m=0;m<letterDays.length;m++) {
         document.getElementsByTagName("TH")[m].innerHTML = letterDays[m]
     }
