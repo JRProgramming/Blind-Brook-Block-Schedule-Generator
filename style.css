@@ -5,7 +5,6 @@ table, tr, td {
     padding-bottom: 5px;
     text-align: center;
     font-size: .8vw;
-    font-weight: 550;
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
 }
