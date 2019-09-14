@@ -63,7 +63,7 @@ textarea {
     border-radius: 5px;
 }
 table, tr, th {
-    font-size: 1.125em;
+    font-size: 1.25vw;
     border: solid black 1px;
 }
 .first {
