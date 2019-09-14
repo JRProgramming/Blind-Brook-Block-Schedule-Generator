@@ -66,30 +66,6 @@ table, tr, th {
     font-size: 1.25vw;
     border: solid black 1px;
 }
-.first {
-    background-color: tomato;
-}
-.second {
-    background-color: dodgerblue;
-}
-.third {
-    background-color: yellow;
-}
-.fourth {
-    background-color: orange;
-}
-.fifth {
-    background-color: mediumseagreen;
-}
-.sixth {
-    background-color: white;
-}
-.seventh {
-    background-color: burlywood;
-}
-.eigth {
-    background-color: pink;
-}
 #lunch {
     height: 30px;
     font-size: 30px;
