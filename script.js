@@ -32,7 +32,7 @@ function implementClass() {
                     }
                     classData.innerHTML = classes[i][3] + "<br>" + classes[i][2] + "<br>" + classes[i][4]
                     if(colors[i - classCount]) {
-                        classData.setAttribute("style", "background-color: " + colors[i - classCount])
+                        classData.style.backgroundColor = colors[i - classCount]
                     } else {
                         for(j=0;j<document.getElementsByTagName("TD").length;j++) {
                             if(document.getElementsByTagName("TD")[j].style.backgroundColor == "" && document.getElementsByTagName("TD")[j].innerHTML != "Lunch") {
@@ -40,7 +40,7 @@ function implementClass() {
                                 for (_= 0;_<3;_++) {
                                     color.push(Math.floor(Math.random() * 255))
                                 }
-                                document.getElementsByTagName("TD")[j].setAttribute("style", "background-color: rgba(" + color[0] + "," + color[1] + "," + color[2] + ", .5)")
+                                document.getElementsByTagName("TD")[j].style.backgroundColor = "rgba(" + color[0] + "," + color[1] + "," + color[2] + ", .5)"
                             }
                         }
                     }
@@ -51,7 +51,7 @@ function implementClass() {
     for(i=0;i<document.getElementsByTagName("TD").length;i++) {
         if(document.getElementsByTagName("TD")[i].innerHTML == "") {
             document.getElementsByTagName("TD")[i].innerHTML = "Free"
-            document.getElementsByTagName("TD")[i].setAttribute("style","backgroundColor: white;")
+            document.getElementsByTagName("TD")[i].style.backgroundColor = "transparent"
         }
     }
     var letterDays = ["Time","A","B","C","D","E","F","G","H"]
