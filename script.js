@@ -26,15 +26,7 @@ function implementClass() {
                 var classData = document.getElementById("p" + classes[i][1] + classes[i][0][l])
                 if(classData != undefined) {
                     classData.innerHTML = classes[i][3] + "<br>" + classes[i][2] + "<br>" + classes[i][4]
-                    if(colors[i]) {
-                        classData.setAttribute("style", "background-color: " + colors[i])
-                    } else {
-                        var color = []
-                        for (_= 0;_<3;_++) {
-                            color.push(Math.floor(Math.random() * 255))
-                        }
-                        classData.setAttribute("style", "background-color: rgba(" + color[0] + "," + color[1] + "," + color[2] + ", .8)")
-                    }
+                    classData.setAttribute("style", "background-color: " + colors[i])
                 }
             }
         }
