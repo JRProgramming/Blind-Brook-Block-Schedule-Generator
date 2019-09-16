@@ -70,10 +70,6 @@ table, tr, th {
     font-size: 1.25vw;
     border: solid black 1px;
 }
-#lunch {
-    height: 30px;
-    font-size: 30px;
-}
 @page {
     size: landscape;
 }
