@@ -9,7 +9,7 @@ function implementClass() {
     if(document.getElementById("errorMessage")) {
         document.getElementById("errorMessage").style.display = "none"
     }
-    var colors = ["tomato", "dodgerblue", "yellow", "orange", "mediumseagreen", "lightblue", "pink", "#d6ff99", "gainsboro", "#ccccff", "#a89de1", "burlywood"]
+    var colors = ["tomato", "dodgerblue", "yellow", "orange", "mediumseagreen", "lightblue", "pink", "#d6ff99", "gainsboro", "#FAE7B5", "#a89de1", "burlywood"]
     document.getElementById("lunch").innerHTML = "Lunch"
     var textfield = document.getElementById("textfield")
     var classes = textfield.value.split('\n');
