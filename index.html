@@ -5,6 +5,12 @@
         <link href="homepage.css" type="text/css" rel="stylesheet">
     </head>
     <body>
+        <div id="background">
+            <div id="deprecated-pop-up">
+                <h1 id="deprecated-header">This site has been moved.</h1> 
+                <p id="deprecated-text">The new site is now located at <a href="https://bbscheduler.com">Blind Brook Schedule Creator</a></p>
+            </div>
+        </div>
         <header>
             <h1>Blind Brook Block Schedule Generator</h1>
         </header>
@@ -23,12 +29,5 @@
         <footer>
             <i>Made by Johnny Ramirez</i>
         </footer>
-        <script>
-            window.onload = function() {
-                if(navigator.userAgent.indexOf("MSIE") != -1 || navigator.userAgent.indexOf("Edge") != -1 || navigator.userAgent.indexOf("Trident") != -1 || (!!document.documentMode == true)) {
-                    document.body.innerHTML = "<h1>This website does not support this broswer</h1><br><h3>Please use a different web broswer (Safari, Chrome, FireFox, and Opera are preferable)</h3>"
-                }
-            }
-        </script>
     </body>
 </html>

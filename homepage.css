@@ -1,3 +1,35 @@
+html, body {
+    height: 100%;
+    
+}
+#deprecated-pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    padding: 24px;
+    border-radius: 10px;
+    height: auto;
+    background-color: #ffffff;
+}
+#deprecated-header {
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 100px;
+    color: black;
+    background-color: transparent;
+}
+#deprecated-text {
+    font-size: 24px;
+}
+#background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
 header, h1 {
     background-color: #003cb3;
     margin: 0;
